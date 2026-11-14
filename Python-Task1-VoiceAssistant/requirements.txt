@@ -1,0 +1,1 @@
+@("SpeechRecognition", "pyttsx3", "PyAudio") | Set-Content requirements.txt
