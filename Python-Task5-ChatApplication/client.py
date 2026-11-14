@@ -51,7 +51,8 @@ def main():
         if message.strip():
             try:
                 sock.sendall(message.encode("utf-8"))
-                print(f"\033[F\033[K[{timestamp()}] {name}: {message}")            except OSError:
+                print(f"[{timestamp()}] {name}: {message}")
+            except OSError:
                 break
     sock.close()
 
